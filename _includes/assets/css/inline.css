@@ -1,7 +1,8 @@
 :root {
-	--primary: blue;
-	--secondary: white;
-	--background: #FFF0EB;
+	--primary: #FDF0E7;
+	--secondary: #23322F;
+	--background: #F25C75;
+  --main-width: 100%;
 }
 
 *, *:before, *:after {
@@ -24,6 +25,10 @@ body {
 
 main {
 	max-width: 37.5em;
+  width: var(--main-width);
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
 }
 
 p,
@@ -184,13 +189,34 @@ textarea {
 
 button {
 	border: 1px solid var(--primary);
+  border-radius: 5px;
 	background-color: var(--primary);
 	color: var(--secondary);
 	cursor: pointer;
+  font-weight: 500;
+  transition: all .5s;
+}
+
+button:hover, a:hover {
+  opacity: .8;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  transition: all .5s;
 }
 
 @media screen and (min-width:768px) {
 	:root {
 		font-size: 1.1rem;
+    --main-width: 60%;
 	}
 }
