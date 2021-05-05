@@ -5,4 +5,7 @@ permalink: /
 eleventyNavigation:
   key: Home
   order: 0
+links:
+  linkLabel: Website
+  linkUrl: https://lepickupmtl.com
 ---
