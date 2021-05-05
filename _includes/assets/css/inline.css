@@ -84,11 +84,40 @@ pre {
 	margin: .5em 0;
 }
 
+img {
+  border-radius: 100%;
+  width: 30%;
+  height: 30%;
+  justify-self: center;
+  object-fit: cover;
+  padding: 1rem;
+}
+
+.info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.info {
+  color: var(--primary);
+  padding: 1rem;
+}
+
+.info p {
+  margin: 0.5rem 0;
+}
+
+.info a {
+  text-decoration: underline !important;
+}
+
 /* Header Logo (style as h2) */
 header > em {
 	display: block;
 	font-size: var(--title-size);
-	margin: .67em 0;
+	margin: .67em 0 0;
 	font-weight: bold;
 	font-style: normal;
   text-align: center;
