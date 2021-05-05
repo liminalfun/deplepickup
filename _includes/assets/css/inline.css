@@ -3,6 +3,7 @@
 	--secondary: #23322F;
 	--background: #F25C75;
   --main-width: 100%;
+  --title-size: 1.5rem;
 }
 
 *, *:before, *:after {
@@ -86,10 +87,12 @@ pre {
 /* Header Logo (style as h2) */
 header > em {
 	display: block;
-	font-size: 2em;
+	font-size: var(--title-size);
 	margin: .67em 0;
 	font-weight: bold;
 	font-style: normal;
+  text-align: center;
+  color: var(--primary);
 }
 
 /* Header Nav */
@@ -218,5 +221,6 @@ footer a {
 	:root {
 		font-size: 1.1rem;
     --main-width: 60%;
+    --title-size: 2rem;
 	}
 }

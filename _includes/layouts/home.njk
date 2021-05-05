@@ -3,4 +3,12 @@ layout: layouts/base.njk
 section: home
 ---
 
+{% set postslist = collections.links %}
+{% include "components/postslist.njk" %}
+
 {{ layoutContent | safe }}
+
+<button class="btn" href="/" target="_blank" rel="norefferer">Untitled</button>
+<button class="btn" href="/" target="_blank" rel="norefferer">Untitled</button>
+<button class="btn" href="/" target="_blank" rel="norefferer">Untitled</button>
+<button class="btn" href="/" target="_blank" rel="norefferer">Untitled</button>
